@@ -1,8 +1,8 @@
 <template>
     <div id="main">
-
         <Header1 />
-        <div class="container-row">
+        <SearchBar />
+		<div class="container-row">
           <Card v-for="value in data" :key='value.id' :id='value.id' :original_title=value.original_title  :overview=value.overview :poster_path=value.poster_path />
         </div>
 
@@ -13,12 +13,14 @@
 
 	import Header1 from '../components/Header.vue'
 	import Card from '../components/Card.vue'
+	import SearchBar from '../components/SearchBar.vue'
 
 	export default {
 		name: 'App',
 		components: {
 			Header1,
-			Card
+			Card,
+			SearchBar
 		},
 		data(){
 			return{

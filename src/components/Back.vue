@@ -1,6 +1,6 @@
 <template>
   <a id='back' href="/" class="container">
-    <div>Back</div>
+    <div>Voltar</div>
   </a>
 </template>
 
