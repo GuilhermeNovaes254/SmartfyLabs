@@ -10,7 +10,7 @@
 	import Internalheader from '../components/InternalHeader.vue'
 
 	export default {
-		name: 'App',
+		name: 'Movies',
 		components: {
 			Internalheader,
 			Back

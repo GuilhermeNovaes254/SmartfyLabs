@@ -27,6 +27,12 @@ body{
     align-items: center;  
 }
 
+#main{
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 #header1>h1{
     color:#000;
 }
@@ -102,7 +108,7 @@ a {
     height: 40px;
     width: 10%;
     margin: 20px 45%  ;
-    background-color: grey;
+    background-color: black;
     color: white;
     display:flex;
     flex-direction: row;
@@ -130,6 +136,76 @@ a {
     word-wrap: break-word;
 }
 
-#searchBar{
-    height: 200px;
+.searchBar{
+    display : flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px;
+}
+
+.searchBar>input{
+    height: 50px;
+    width: 30%;
+    border-radius: 20px;
+    font-size: 25px;
+}
+
+
+@media screen and (max-width: 800px) {
+    #imageHeader{
+        width: 30vw;
+        padding: 20px;
+    }
+    
+    #back{
+        height: 40px;
+        width: 20%;
+        margin: 20px auto;
+    }
+}
+
+
+@media screen and (max-width: 450px) {
+    .card{    
+        min-width: 25vw;
+        margin: 5px 2px;
+    }
+
+    .card>a>img{
+        width: 25vw;
+    }
+
+    #imageHeader{
+        width: 50vw;
+        padding: 20px;
+    }
+
+    #back{
+        height: 40px;
+        width: 30%;
+        margin: 20px auto;
+    }
+}
+
+
+@media screen and (max-width: 350px) {
+    .card{    
+        min-width: 45vw;
+        margin: 5px 2px;
+    }
+
+    .card>a>img{
+        width: 45vw;
+    }
+    
+    #imageHeader{
+        width: 75vw;
+        padding: 20px;
+    }
+
+    #back{
+        height: 40px;
+        width: 30%;
+        margin: 20px auto;
+    }
 }
